@@ -7,13 +7,19 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="체크박스 테스트"/>
     <Button
         android:id="@+id/btnStartStartedService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="startBackgroundService"
         android:text="백그라운드 서비스 시작"
-        android:layout_marginTop="100dp"/>
+        />
     <Button
         android:id="@+id/btnStopStartedService"
         android:layout_width="match_parent"

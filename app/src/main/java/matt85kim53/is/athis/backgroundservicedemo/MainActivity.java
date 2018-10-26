@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     public void startBackgroundService(View view) {
 
         Intent intent = new Intent(this, MyBackgroundService.class);
+
+        //이 인텐트가 onStartCommand(Intent로 받음)
+
+        //data 보내기 예 key value pair
+        intent.putExtra("","");
         startService(intent);
     }
 
